@@ -17,6 +17,7 @@ class Webservice {
     }
      */
     
+    
     func downloadCurrenciesContinuation(url: URL) async throws -> [CryptoCurrency] {
         try await withCheckedThrowingContinuation({ continuation in
             downloadCurrencies(url: url) { result in
